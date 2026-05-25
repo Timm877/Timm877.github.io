@@ -1,6 +1,6 @@
 # timdeboer.dev
 
-Personal website of Tim de Boer — AI engineer at Delphyr, Amsterdam. Built with plain HTML, CSS, and JS. No framework, no build step.
+Personal website of Tim de Boer.
 
 Live at [timdeboer.dev](https://timdeboer.dev) via GitHub Pages.
 
