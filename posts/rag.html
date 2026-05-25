@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Retrieval-augmented generation in LLMs, Tim de Boer</title>
+<meta name="description" content="How RAG extends an LLM's knowledge with a company's internal documents, without retraining the model." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/site.css" />
+<link rel="icon" type="image/png" href="../assets/favicon.png" />
+<link rel="shortcut icon" href="../assets/favicon.png" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="../index.html">Tim <em>de Boer</em></a>
+    <nav class="nav">
+      <a href="../index.html">Index</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="../index.html#contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <div class="wrap-read">
+    <a class="article__back" href="../blog.html">All posts</a>
+
+    <header class="article__head">
+      <div class="article__tags">
+        <span class="article__tag">RAG</span>
+        <span class="article__tag">LLMs</span>
+        <span class="article__tag">Enterprise AI</span>
+      </div>
+      <h1 class="article__title">Retrieval-augmented generation in <em>LLMs</em></h1>
+      <p class="article__deck">
+        How RAG extends an LLM's knowledge with a company's internal documents, without retraining the model, and what it looks like when it actually works in production.
+      </p>
+      <div class="article__meta">
+        <span>March 2024</span>
+        <span>7 min read</span>
+        <span>Originally on <a href="https://www.conclusion.com/nl-nl/intelligence/blog/retrieval-augmented-generation" target="_blank" rel="noopener">Future Facts Conclusion (NL) &nearr;</a></span>
+      </div>
+    </header>
+
+    <div class="prose">
+
+<p>LLMs are impressive until you need them to know something about your organisation. They have no access to internal documents, and a model that always wants to give an answer will hallucinate one rather than admit ignorance. Retrieval-Augmented Generation solves this by connecting the model to a searchable knowledge base at query time, without retraining.</p>
+
+      <p>The article explains the four-step pipeline: chunking and embedding documents, embedding the user's question, retrieving the closest matches, and generating a grounded answer. It covers practical business applications and the limits: what happens when retrieval misses the user's intent, and how citations close the remaining gap.</p>
+
+      <p>Originally published in Dutch on the Future Facts Conclusion blog, March 2024.</p>
+
+      <a class="download-card" href="https://www.conclusion.com/nl-nl/intelligence/blog/retrieval-augmented-generation" target="_blank" rel="noopener">
+        <span class="download-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </span>
+        <div>
+          <div class="download-card__title">Read the full article (NL) &nearr;</div>
+          <div class="download-card__meta">Future Facts Conclusion · March 2024</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <span class="site-footer__brand">Tim de Boer</span>
+    <div class="site-footer__links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html">Blog</a>
+      <a href="mailto:timdb877@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/timwjdeboer/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Timm877" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <span class="site-footer__meta">© 2026 · Built in Amsterdam</span>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+</body>
+</html>

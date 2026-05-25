@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Building a brain-computer interface to play Space Invaders, Tim de Boer</title>
+<meta name="description" content="Six months of EEG, motor imagery and deep transfer learning, my master's project at the VU Amsterdam." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/site.css" />
+<link rel="icon" type="image/png" href="../assets/favicon.png" />
+<link rel="shortcut icon" href="../assets/favicon.png" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="../index.html">Tim <em>de Boer</em></a>
+    <nav class="nav">
+      <a href="../index.html">Index</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="../index.html#contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <div class="wrap-read">
+    <a class="article__back" href="../blog.html">All posts</a>
+
+    <header class="article__head">
+      <div class="article__tags">
+        <span class="article__tag">Brain-Computer Interfaces</span>
+        <span class="article__tag">Deep learning</span>
+        <span class="article__tag">MSc thesis</span>
+      </div>
+      <h1 class="article__title">Building a brain-computer interface to play <em>Space Invaders</em></h1>
+      <p class="article__deck">
+        Six months of EEG, motor imagery and deep transfer learning.
+      </p>
+      <div class="article__meta">
+        <span>September 2022</span>
+        <span>18 min read</span>
+        <span>Originally on <a href="https://medium.com/data-science/i-built-a-brain-computer-interface-to-play-space-invaders-using-thoughts-23980cb4faf7" target="_blank" rel="noopener">Towards Data Science &nearr;</a></span>
+      </div>
+    </header>
+
+    <div class="prose">
+
+      <figure style="margin:0 0 2rem;border-radius:6px;overflow:hidden;">
+        <img src="../assets/BCI.gif" alt="Real-time motor imagery BCI playing Space Invaders" style="width:100%;display:block;" />
+      </figure>
+
+      <p>For my master's project at VU Amsterdam I spent six months building a brain-computer interface that lets someone play Space Invaders using motor imagery. The idea: paralyzed people can still imagine moving their limbs even when they physically cannot, and that imagined movement produces measurable brain signals. Capture those signals with EEG, classify them with a machine learning model, translate the prediction into game controls. A cheap, accessible BCI that works is a first step toward clinical rehabilitation.</p>
+
+      <p>The system used a g.tec Unicorn headset, an EEGNet deep learning architecture trained with transfer learning across multiple subjects, and a real-time Python pipeline. The article covers the full BCI pipeline: hardware selection, experiment design, pre-processing, feature extraction, and deep transfer learning, plus the practical challenges of EEG variability that make the gap between a lab demo and a clinical device wider than it looks. Published as two posts on Towards Data Science, September 2022.</p>
+
+      <a class="download-card" href="../assets/bci-thesis.pdf" target="_blank" rel="noopener">
+        <span class="download-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg>
+        </span>
+        <div>
+          <div class="download-card__title">The full thesis paper (PDF)</div>
+          <div class="download-card__meta">Deep transfer learning for EEG-based BCIs · VU Amsterdam · 2022</div>
+        </div>
+      </a>
+
+      <a class="download-card" href="https://medium.com/data-science/i-built-a-brain-computer-interface-to-play-space-invaders-using-thoughts-23980cb4faf7" target="_blank" rel="noopener">
+        <span class="download-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </span>
+        <div>
+          <div class="download-card__title">Read the full article &nearr;</div>
+          <div class="download-card__meta">Towards Data Science · September 2022</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <span class="site-footer__brand">Tim de Boer</span>
+    <div class="site-footer__links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html">Blog</a>
+      <a href="mailto:timdb877@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/timwjdeboer/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Timm877" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <span class="site-footer__meta">© 2026 · Built in Amsterdam</span>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+</body>
+</html>

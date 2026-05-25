@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The building blocks of a brain-computer interface, Tim de Boer</title>
+<meta name="description" content="The six-step BCI pipeline from user to output: data collection, pre-processing, feature extraction, prediction, and the feedback loop that closes the cycle." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../css/site.css" />
+<link rel="icon" type="image/png" href="../assets/favicon.png" />
+<link rel="shortcut icon" href="../assets/favicon.png" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="../index.html">Tim <em>de Boer</em></a>
+    <nav class="nav">
+      <a href="../index.html">Index</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html" class="active">Blog</a>
+      <a href="../index.html#contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+    </nav>
+  </div>
+</header>
+
+<article class="article">
+  <div class="wrap-read">
+    <a class="article__back" href="../blog.html">All posts</a>
+
+    <header class="article__head">
+      <div class="article__tags">
+        <span class="article__tag">Brain-Computer Interfaces</span>
+        <span class="article__tag">EEG</span>
+        <span class="article__tag">Signal processing</span>
+      </div>
+      <h1 class="article__title">The building blocks of a <em>brain-computer interface</em></h1>
+      <p class="article__deck">
+        The six-step BCI pipeline from user to output: data collection, pre-processing, feature extraction, prediction, and why the feedback loop that closes the cycle is harder than it looks.
+      </p>
+      <div class="article__meta">
+        <span>July 2022</span>
+        <span>6 min read</span>
+        <span>Originally on <a href="https://medium.com/the-ultimate-bedroom-bci-guide/the-6-essential-steps-to-build-your-bedroom-bci-bef7081d9c81" target="_blank" rel="noopener">Medium &nearr;</a></span>
+      </div>
+    </header>
+
+    <div class="prose">
+
+      <p>A BCI pipeline is a cycle, not a linear process: the system influences the user, the user changes what they do, and that changes what the system reads. The article walks through the six stages: the user performing a mental task, EEG data collection, pre-processing to remove noise, feature extraction to isolate relevant frequency and spatial patterns, machine learning prediction, and the output that closes the feedback loop.</p>
+
+      <p>Each step has its own traps. Device selection is the most consequential early decision. Pre-processing choices cascade through to classification accuracy. And the feedback loop at the end is harder to design for than it looks: wrong predictions change the user's mental state, which creates a different signal, which affects the next prediction. Published on Medium, July 2022.</p>
+
+      <a class="download-card" href="https://medium.com/the-ultimate-bedroom-bci-guide/the-6-essential-steps-to-build-your-bedroom-bci-bef7081d9c81" target="_blank" rel="noopener">
+        <span class="download-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 6H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+        </span>
+        <div>
+          <div class="download-card__title">Read the full article &nearr;</div>
+          <div class="download-card__meta">Medium · July 2022</div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <span class="site-footer__brand">Tim de Boer</span>
+    <div class="site-footer__links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../blog.html">Blog</a>
+      <a href="mailto:timdb877@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/timwjdeboer/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Timm877" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <span class="site-footer__meta">© 2026 · Built in Amsterdam</span>
+  </div>
+</footer>
+
+<script src="../js/site.js"></script>
+</body>
+</html>

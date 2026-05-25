@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Blog, Tim de Boer</title>
+<meta name="description" content="Essays and articles by Tim de Boer on brain-computer interfaces, RAG, medical AI, and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,300..700;1,300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/site.css" />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<link rel="shortcut icon" href="assets/favicon.png" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html">Tim <em>de Boer</em></a>
+    <nav class="nav">
+      <a href="index.html">Index</a>
+      <a href="about.html">About</a>
+      <a href="blog.html" class="active">Blog</a>
+      <a href="index.html#contact">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero__row" style="grid-template-columns:1fr;">
+    <div>
+      <p class="eyebrow">Thinking out loud</p>
+      <h1 class="hero__name"><em>Blog</em></h1>
+      <p class="hero__bio">
+        Notes, essays and articles on brain-computer interfaces, retrieval-augmented generation, and medical AI.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+
+    <div class="filter-row">
+      <button class="chip active" data-chip="all">All</button>
+      <button class="chip" data-chip="medical-ai">Medical AI</button>
+      <button class="chip" data-chip="ai-rag">AI &amp; RAG</button>
+      <button class="chip" data-chip="bci">BCI</button>
+      <button class="chip" data-chip="ml">AI Fundamentals</button>
+      <button class="chip" data-chip="sports">Sports science</button>
+    </div>
+
+    <!-- medical AI -->
+    <div class="topic-group fade-in" data-tag-group="medical-ai">
+      <div class="topic-group__head">
+        <h2 class="topic-group__title">Medical AI</h2>
+        <span class="topic-group__count">Delphyr</span>
+      </div>
+      <ul class="writing-list">
+        <li class="writing-list__item">
+          <span class="writing-list__date">Apr 2026</span>
+          <h3 class="writing-list__title">
+            <a href="posts/medical-ai-techniques.html">10 techniques to make LLMs safer in healthcare</a>
+            <small>Output guards, structured outputs, citation verification, hallucination detection, practical methods for managing the probabilistic nature of LLMs.</small>
+          </h3>
+          <span class="writing-list__tag">11 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Mar 2026</span>
+          <h3 class="writing-list__title">
+            <a href="posts/medical-ai-safety.html">Why medical AI needs multiple safety checks</a>
+            <small>How layered guardrails, across security, accuracy and focus, keep clinical AI reliable.</small>
+          </h3>
+          <span class="writing-list__tag">8 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Jan 2026</span>
+          <h3 class="writing-list__title">
+            <a href="posts/medical-ai-citations.html">Why medical AI needs citations</a>
+            <small>On grounding clinical AI outputs in verifiable sources and traceable evidence.</small>
+          </h3>
+          <span class="writing-list__tag">7 min</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- AI / RAG -->
+    <div class="topic-group fade-in" data-tag-group="ai-rag">
+      <div class="topic-group__head">
+        <h2 class="topic-group__title">Retrieval-augmented generation</h2>
+        <span class="topic-group__count">LLMs</span>
+      </div>
+      <ul class="writing-list">
+        <li class="writing-list__item">
+          <span class="writing-list__date">Mar 2024</span>
+          <h3 class="writing-list__title">
+            <a href="posts/rag.html">Retrieval-augmented generation in LLMs</a>
+            <small>How RAG extends an LLM's knowledge with a company's internal documents, without retraining the model.</small>
+          </h3>
+          <span class="writing-list__tag">7 min</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- BCI -->
+    <div class="topic-group fade-in" data-tag-group="bci">
+      <div class="topic-group__head">
+        <h2 class="topic-group__title">Brain-Computer Interfaces</h2>
+        <span class="topic-group__count">Master's thesis &amp; personal projects</span>
+      </div>
+      <ul class="writing-list">
+        <li class="writing-list__item">
+          <span class="writing-list__date">Sep 2022</span>
+          <h3 class="writing-list__title">
+            <a href="posts/bci.html">Building a brain-computer interface to play Space Invaders</a>
+            <small>Six months of EEG, motor imagery and deep transfer learning.</small>
+          </h3>
+          <span class="writing-list__tag">18 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Jul 2022</span>
+          <h3 class="writing-list__title">
+            <a href="posts/bci-building-blocks.html">The building blocks of a brain-computer interface</a>
+            <small>The six-step BCI pipeline: data collection, pre-processing, feature extraction, prediction, and the feedback loop that closes the cycle.</small>
+          </h3>
+          <span class="writing-list__tag">6 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Aug 2021</span>
+          <h3 class="writing-list__title">
+            <a href="posts/bci-intro.html">Why, what and how to start your own BCI project</a>
+            <small>A practical introduction: what BCIs are, which EEG devices are worth considering, and the neuroscience you need before collecting data.</small>
+          </h3>
+          <span class="writing-list__tag">10 min</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- AI Fundamentals -->
+    <div class="topic-group fade-in" data-tag-group="ml">
+      <div class="topic-group__head">
+        <h2 class="topic-group__title">Artificial Intelligence</h2>
+        <span class="topic-group__count">Fundamentals</span>
+      </div>
+      <ul class="writing-list">
+        <li class="writing-list__item">
+          <span class="writing-list__date">Jan 2021</span>
+          <h3 class="writing-list__title">
+            <a href="posts/backpropagation-python.html">Backpropagation in plain Python</a>
+            <small>Implementing a neural network forward and backward pass from scratch with nothing but Python lists.</small>
+          </h3>
+          <span class="writing-list__tag">5 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Oct 2020</span>
+          <h3 class="writing-list__title">
+            <a href="posts/statistics-r.html">Practical statistics in R</a>
+            <small>A working reference for statistical tests: normality checks, t-tests, ANOVA, and their non-parametric counterparts.</small>
+          </h3>
+          <span class="writing-list__tag">11 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Oct 2020</span>
+          <h3 class="writing-list__title">
+            <a href="posts/bayesian-networks.html">Essence of Bayesian networks</a>
+            <small>DAGs, conditional probability tables, d-separation, and variable elimination.</small>
+          </h3>
+          <span class="writing-list__tag">11 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Oct 2020</span>
+          <h3 class="writing-list__title">
+            <a href="posts/ontology-reasoning.html">Essence of ontology reasoning</a>
+            <small>Description Logic, Tboxes, Aboxes and the Tableaux algorithm for consistency checking.</small>
+          </h3>
+          <span class="writing-list__tag">8 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Oct 2020</span>
+          <h3 class="writing-list__title">
+            <a href="posts/propositional-logic-sat.html">Propositional logic and SAT problems</a>
+            <small>From brute-force truth tables to CNF, the DPLL algorithm, and stochastic SAT solvers.</small>
+          </h3>
+          <span class="writing-list__tag">10 min</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Sports science -->
+    <div class="topic-group fade-in" data-tag-group="sports">
+      <div class="topic-group__head">
+        <h2 class="topic-group__title">Sports science</h2>
+        <span class="topic-group__count">Exercise physiology</span>
+      </div>
+      <ul class="writing-list">
+        <li class="writing-list__item">
+          <span class="writing-list__date">Aug 2022</span>
+          <h3 class="writing-list__title">
+            <a href="posts/caffeine-running.html">How coffee makes you run faster</a>
+            <small>The benefits of caffeine for sport performance: what the evidence says, optimal dosing, and why individual variation matters.</small>
+          </h3>
+          <span class="writing-list__tag">6 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Aug 2022</span>
+          <h3 class="writing-list__title">
+            <a href="posts/hydration.html">How to not dry out after exercise</a>
+            <small>How dehydration affects endurance, sprint and cognitive performance, and the practical numbers to rehydrate correctly.</small>
+          </h3>
+          <span class="writing-list__tag">5 min</span>
+        </li>
+        <li class="writing-list__item">
+          <span class="writing-list__date">Aug 2022</span>
+          <h3 class="writing-list__title">
+            <a href="posts/interference-effect.html">Why Usain Bolt wouldn't run a marathon</a>
+            <small>How concurrent strength and endurance training creates competing molecular adaptations, and what to do about it.</small>
+          </h3>
+          <span class="writing-list__tag">5 min</span>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <span class="site-footer__brand">Tim de Boer</span>
+    <div class="site-footer__links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="mailto:timdb877@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/timwjdeboer/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/Timm877" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <span class="site-footer__meta">© 2026 · Built in Amsterdam</span>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

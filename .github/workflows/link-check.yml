@@ -1,0 +1,24 @@
+name: Check links
+
+on:
+  schedule:
+    - cron: '0 9 1 * *'  # 1st of every month, 09:00 UTC
+  workflow_dispatch:
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --verbose
+            --no-progress
+            --exclude 'linkedin\.com'
+            --exclude 'medium\.com'
+            --timeout 20
+            './**/*.html'
+          fail: true
