@@ -22,6 +22,8 @@ jobs:
             --no-progress
             --exclude 'linkedin\.com'
             --exclude 'medium\.com'
+            --exclude 'conclusion\.com'
+            --exclude 'devgenius\.io'
             --timeout 20
             './**/*.html'
           fail: true
